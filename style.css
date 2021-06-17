@@ -2,3 +2,7 @@ body {
   background-color: #eeee77;
   font-family: "Trebuchet MS", sans-serif;
 }
+
+em {
+  font-weight: bold;
+}
