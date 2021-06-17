@@ -7,3 +7,47 @@ em {
   font-weight: bold;
   font-style: normal;
 }
+
+@media screen and (min-width: 800px) {
+  h1 {
+    width: 7em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #header-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 25%;
+  }
+
+  .content {
+    width: 50%;
+    margin:0 auto;
+  }
+}
+
+@media screen
+  and (min-width: 320px)
+  and (max-width: 800px) {
+  h1 {
+    width: 7em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #header-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+  }
+
+  .content {
+    width: 90%;
+    margin:0 auto;
+  }
+}
