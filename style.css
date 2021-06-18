@@ -10,7 +10,7 @@ em {
 
 @media screen and (min-width: 800px) {
   h1 {
-    width: 7em;
+    width: 6.7em;
     margin-left: auto;
     margin-right: auto;
   }
@@ -33,7 +33,7 @@ em {
   and (min-width: 320px)
   and (max-width: 800px) {
   h1 {
-    width: 7em;
+    width: 6.5em;
     margin-left: auto;
     margin-right: auto;
   }
