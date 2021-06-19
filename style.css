@@ -1,6 +1,7 @@
 body {
-  background-color: #eeee77;
+  background-color: #020122;
   font-family: "Trebuchet MS", sans-serif;
+  color: #F2F3AE;
 }
 
 em {
@@ -13,17 +14,17 @@ h2 {
 }
 
 a {
-  color: #771100;
+  color: #FC9E4F;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:visited {
-  color: #775544;
+  color: #EDD382;
 }
 
 a:hover {
-  color: #ff2200;
+  color: #F4442E;
 }
 
 footer {
@@ -43,8 +44,8 @@ footer {
 
 .content p {
   text-align: left;
-    background: #ffff88;
-    border-color: #ffff88;
+    background: #020112;
+    border-color: #020112;
     border-style: solid;
     border-width: 10px;
 }
