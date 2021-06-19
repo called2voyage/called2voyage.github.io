@@ -8,11 +8,6 @@ em {
   font-style: normal;
 }
 
-h1 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 h2 {
   margin-bottom: 20px;
 }
@@ -78,10 +73,6 @@ li {
 }
 
 @media screen and (min-width: 800px) {
-  h1 {
-    width: 6.7em;
-  }
-
   #header-img {
     width: 25%;
     height: 25%;
@@ -95,10 +86,6 @@ li {
 @media screen
   and (min-width: 320px)
   and (max-width: 800px) {
-  h1 {
-    width: 6.5em;
-  }
-
   #header-img {
     width: 50%;
     height: 50%;
