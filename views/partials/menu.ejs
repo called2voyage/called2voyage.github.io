@@ -1,0 +1,11 @@
+<div class="menu-icon"><a href="javascript:showHideMenu()">&#x2630;</a></div>
+<% var page = typeof title != 'undefined' ? title : 'Untitled' %>
+<div class="menu">
+  <ul>
+    <li><% if(page === "Home") { %>Home<% } else { %><a href="/">Home</a><% } %></li>
+    <li><% if(page === "About") { %>About<% } else { %><a href="about">About</a><% } %></li>
+    <li><% if(page === "Member Manifesto") { %>Manifesto<% } else { %><a href="manifesto">Manifesto</a><% } %></li>
+    <li><% if(page === "Solutions") { %>Solutions<% } else { %><a href="solutions">Solutions</a><% } %></li>
+    <li><% if(page === "Contact") { %>Contact<% } else { %><a href="contact">Contact</a><% } %></li>
+  </ul>
+</div>

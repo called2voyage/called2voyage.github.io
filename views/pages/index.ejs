@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>called2voyage - Home</title>
-<link rel="shortcut icon" type="image/x-icon" href="images/c2v.ico" />
-<meta name="description" content="called2voyage Josie Stewart personal profile">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="css/style.css">
-<script type="text/javascript" src="js/site.js"></script>
+    <%- include('../partials/head', {title:index_data.title, description:index_data.description}) %>
 </head>
   
 <body>
@@ -14,9 +9,7 @@
 <img id="header-img" src="images/josie.png" alt="Picture of Josie - a brown haired, blue eyed woman with black rimmed glasses"/>
 
 <div class="content">
-  <h1>called2voyage</h1>
-
-
+  <%- include('../partials/header', {title:index_data.title}) %>
 
 <div class="border">
 <p>
@@ -103,9 +96,7 @@
 
 </div>
     
-<footer>
-<small>Copyright &copy; 2021, called2voyage. All rights reserved.</small>
-</footer>
+<%- include('../partials/footer') %>
     
 </body>
 </html>
