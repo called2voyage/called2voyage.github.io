@@ -10,6 +10,13 @@ body {
 
 .fitcontent {
   width:fit-content;
+  position: relative;
+}
+
+.fitcontent img {
+  position: absolute;
+  top: 15px;
+  right: 12px;
 }
 
 .poweredby {

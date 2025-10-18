@@ -17,5 +17,11 @@ app.get('/', function(req, res) {
 
 // end of pages
 
-app.listen(9100);
-console.log('Server is listening on port 9100');
+if (process.env.NODE_ENV == 'production') {
+	app.listen(9100, "169.197.80.52");
+	console.log('[PROD] Server is listening on 169.197.80.52:9100');
+}
+else {
+	app.listen(9100);
+	console.log('[DEV] Server is listening on port 9100');	
+}
