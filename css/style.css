@@ -162,9 +162,69 @@ footer {
   text-align: left;
 }
 
+.blog-index h2.section-title {
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
 .content p {
   text-align: left;
   margin: 0;
+}
+
+.content .blog-index p {
+  width: auto;
+  margin-bottom: 1em;
+}
+
+.content .blog-index em {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.tabs {
+  margin: 0 auto;
+  margin-top: 0.75em;
+  height: 1em;
+  background-color: #424251;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs .current-tab {
+  color: #F4442E;
+  font-weight: bold;
+}
+
+.content .blog p {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.content .blog em {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.post .return {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.post h2.section-title {
+  text-align: left;
+  margin: 0 auto;
 }
 
 .textblock {
@@ -194,6 +254,14 @@ footer {
 }
 
 .bio {
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: "Trebuchet MS", sans-serif;
+  text-align: left;
+}
+
+.blog-index {
   margin: auto;
   margin-top: 20px;
   padding: 10px;
@@ -389,6 +457,18 @@ p.inline {
   .bio {
     width: 50%;
   }
+  .blog-index {
+    width: 50%;
+  }
+  .post .return {
+    width: 50%;
+  }
+  .post h2.section-title {
+    width: 50%;
+  }
+  .tabs {
+    width: 30%;
+  }
 }
 
 @media screen
@@ -415,5 +495,17 @@ p.inline {
   }
   .bio {
     width: 90%;
+  }
+  .blog-index {
+    width: 80%;
+  }
+  .post .return {
+    width: 80%;
+  }
+  .post h2.section-title {
+    width: 80%;
+  }
+  .tabs {
+    width: 60%;
   }
 }

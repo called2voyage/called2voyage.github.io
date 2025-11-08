@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head', {title:post_data.attributes.title, description:post_data.attributes.description}) %>
+</head>
+  
+<body>
+
+<div class="content post">
+
+  <%- include('../partials/header', {title:"Post", subheading:post_data.attributes.title, slug:post_data.attributes.slug}) %>
+
+  <div class="blog">
+    <br />
+    <%- post_text %>
+    <p><small><em>Published: <%= post_data.attributes.date %></em></small></p>
+  </div>
+
+</div>
+    
+<%- include('../partials/footer') %>
+    
+</body>
+</html>

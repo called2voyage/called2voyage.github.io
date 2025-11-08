@@ -1,3 +1,5 @@
 <h1 class="pagetitle"><%= branding_data.full_site_name %></h1>
 <% var page = typeof title != 'undefined' ? title : 'Untitled' %>
-<% if(page === "Home") { %><% } else { %><h2 style="<% if(page === "About") { %>margin-top: 0;<% } %>"><%= typeof subheading != 'undefined' ? subheading : 'Untitled' %></h2><% } %>
+<% var slug = typeof slug != 'undefined' ? slug : '' %>
+<% if(page === "Post") { %><br /><a class="return" href="/blog#<%= slug %>">&lt; Return to home</a><br /><% } %>
+<% if(page === "Home") { %><% } else { %><h2 class="section-title" style="<% if(page === "About") { %>margin-top: 0;<% } %>"><%= typeof subheading != 'undefined' ? subheading : 'Untitled' %></h2><% } %>
