@@ -78,6 +78,10 @@ blog_pages.then((pages) => {
 	});
 });
 
+app.get("/blog/object-permenance-and-writing" , (req,res) => {
+	res.redirect(301, "/blog/object-permanence-and-writing");
+});
+
 // end of pages
 
 if (process.env.NODE_ENV == 'production') {
