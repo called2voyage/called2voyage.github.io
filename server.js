@@ -24,6 +24,12 @@ app.get('/about', function(req, res) {
   res.render('pages/about', {about_data: about_data, branding_data: branding_data});
 });
 
+// community agreement page
+let agreement_data = require('./views/data/community_agreement.json')
+app.get('/agreement', function(req, res) {
+	res.render('pages/community_agreement', {agreement_data: agreement_data, branding_data: branding_data});
+});
+
 // manifesto page
 let manifesto_data = require('./views/data/manifesto.json')
 app.get('/manifesto', function(req, res) {
@@ -83,6 +89,11 @@ app.get("/papers*", function(req, res, next){
 // shiver cycle page
 app.get("/shiver-cycle" , (req,res) => {
 	res.redirect(301, "https://home.bluesharkfriends.com/index.php/s/wNCJ9WCEdTCdqCi");
+});
+
+// operating agreement page
+app.get("/operating-agreement", (req, res) => {
+	res.redirect(301, "https://home.bluesharkfriends.com/index.php/s/qsRND3mx4yik2YM")
 });
 
 // invite page

@@ -62,6 +62,23 @@ app.render('pages/manifesto', {manifesto_data: manifesto_data, branding_data: br
     }
 });
 
+// community agreement page
+let agreement_data = require('./views/data/community_agreement.json')
+app.render('pages/agreement', {agreement_data: agreement_data, branding_data: branding_data}, (err, res) =>{
+    if (err) {
+        console.error('Error rendering');
+    } else {
+        console.log(__dirname + '/community_agreement.html')
+        fs.writeFile(__dirname + '/community_agreement.html', res, err => {
+            if (err) {
+              console.error(err);
+            } else {
+              // file written successfully
+            }
+          });
+    }
+});
+
 // solutions page
 let solutions_data = require('./views/data/solutions.json')
 app.render('pages/solutions', {solutions_data: solutions_data, branding_data: branding_data}, (err, res) =>{

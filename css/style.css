@@ -350,6 +350,36 @@ p.inline {
   color: #FF6607;
 }
 
+.agreement div {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.agreement h3 {
+  color: #FF6607;
+  margin-bottom: 5px;
+}
+
+.agreement p {
+  text-align: left;
+}
+
+.agreement b {
+  color: #FF6607;
+}
+
+.agreement ol {
+  counter-set: item 0;
+}
+
+.agreement ol li {
+  counter-increment: item;
+}
+
+.agreement ol li::marker {
+  content: counter(item) ") "
+}
+
 .story div {
   margin-bottom: 20px;
 }
